@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Matching Results</title>
+</head>
+<body>
+    <h1>Matching Results</h1>
+    <table border="1">
+        <tr>
+            <th>Resume Index</th>
+            <th>Similarity Score</th>
+        </tr>
+        {% for index, score in results %}
+        <tr>
+            <td>{{ index }}</td>
+            <td>{{ score }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <a href="/">Go Back</a>
+</body>
+</html>

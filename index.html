@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resume Matcher</title>
+</head>
+<body>
+    <h1>Upload Resumes and Job Description</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <label for="resumes">Resumes:</label>
+        <input type="file" name="resumes" multiple required>
+        <br>
+        <label for="job_description">Job Description:</label>
+        <input type="file" name="job_description" required>
+        <br><br>
+        <input type="submit" value="Upload">
+    </form>
+</body>
+</html>
